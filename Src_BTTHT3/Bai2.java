@@ -1,4 +1,4 @@
-public class ThongTinCaNhan {
+public class Bai2 {
     public static void main(String[] args) 
     {
         String ten = "Nguyen Vo Thanh Tu "; 
