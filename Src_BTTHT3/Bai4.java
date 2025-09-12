@@ -1,4 +1,3 @@
-package packed;
 import java.util.*;
 public class Bai4 {
 	static double money,laisuat;
