@@ -1,4 +1,3 @@
-package packed;
 import java.util.*;
 public class Bai6 {
 	static int BCNN,a,b;
