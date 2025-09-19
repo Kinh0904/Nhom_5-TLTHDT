@@ -1,4 +1,3 @@
-package packed;
 import java.util.*;
 public class Bai9 {
 	static ArrayList<Integer> ar = new ArrayList<Integer>();
