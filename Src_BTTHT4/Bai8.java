@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class bai8t4 {public static void main(String[] args) {
+public class Bai8 {public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap so phan tu cua mang: ");
         int n = sc.nextInt();
