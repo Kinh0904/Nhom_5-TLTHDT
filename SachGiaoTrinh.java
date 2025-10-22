@@ -34,7 +34,7 @@ public class SachGiaoTrinh extends Sach {
     public String toString() {
         return super.toString() +
                 ", Mon hoc='" + this.monHoc + '\'' +
-                ", Cap do='" + this.capDo + '\'' + ",gia ban:"+ giaBan() +
+                ", Cap do='" + this.capDo + '\'' + ",gia ban:"+ tinhGiaBan() +
                 '}';
     }
     public SachGiaoTrinh(){
@@ -46,7 +46,7 @@ public class SachGiaoTrinh extends Sach {
     this.soNamPhatHanh = year - super.getNamXuatBan();
     }
     @Override
-    public double giaBan() {
+    public double tinhGiaBan() {
         return super.getGiaCoBan() + ( this.soNamPhatHanh* 5000);
     }
 }

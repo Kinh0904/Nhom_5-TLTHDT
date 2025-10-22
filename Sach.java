@@ -1,11 +1,11 @@
 package Pack;
-public abstract class Sach {
-		private String maSach;
-		private String tieuDe;
-		private String tacGia;
-		private int namXuatBan;
-		private int soLuong;
-		private double giaCoBan;
+public abstract class Sach implements IGiaBan, IKiemKe {
+		protected String maSach;
+		protected String tieuDe;
+		protected String tacGia;
+		protected int namXuatBan;
+		protected int soLuong;
+		protected double giaCoBan;
 		
 		void setMaSach(String maSach) {
 			this.maSach=maSach;
@@ -60,5 +60,11 @@ public abstract class Sach {
 				", Nam xuat ban=" + this.namXuatBan +
                 ", So luong=" + this.soLuong ;      
     	}	
-		public abstract double giaBan();
-}
+		public abstract double tinhGiaBan();
+		public boolean kiemTraTonKho(int soLuongToiThieu) {
+            return this.soLuong >= soLuongToiThieu;
+        }
+		public void capNhatViTri(String viTriMoi) {
+            System.out.println("Da chuyen sach "+this.tieuDe+ " den khu vuc: " + viTriMoi);
+        }
+	}

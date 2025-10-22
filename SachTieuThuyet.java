@@ -12,7 +12,7 @@ public class SachTieuThuyet extends Sach {
         Boolean getlaSachSerie() {
             return this.laSachSerie;
         }
-        void setlaSachSerie(Boolean laSachSerie){
+        void setLaSachSerie(Boolean laSachSerie){
             this.laSachSerie = laSachSerie;
         }
         public SachTieuThuyet(String maSach, String tieuDe, String tacGia, int namXuatBan, int soLuong, String theLoai, Boolean laSachSerie, double giaCoBan) {
@@ -25,13 +25,13 @@ public class SachTieuThuyet extends Sach {
             return super.toString() +
                     ", The loai='" + this.theLoai + '\'' +
                     ", La sach serie=" + (this.laSachSerie ? "Co" : "Khong") +
-                    ", gia ban=" + giaBan() +'}';
+                    ", gia ban=" + tinhGiaBan() +'}';
         }
         public SachTieuThuyet(){
             super();
         }
         @Override
-        public double giaBan() {
+        public double tinhGiaBan() {
             if (this.laSachSerie) {
                 return super.getGiaCoBan() + 15000;
             } else {

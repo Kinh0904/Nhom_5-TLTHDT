@@ -1,7 +1,10 @@
 package Pack;
 import java.util.ArrayList;
-public class QuanLySach {
+public class QuanLySach implements IQuanLySach {
     private ArrayList<Sach> danhSach = new ArrayList<>();
+    public QuanLySach(){
+
+    }
     public void themSach(Sach sach) {
         danhSach.add(sach);
     }
@@ -25,9 +28,13 @@ public class QuanLySach {
         return null;
     }
     public void hienThiTatCa() {
-        for (Sach s : danhSach) {
+        if(danhSach.size() != 0)
+            for (Sach s : danhSach) {
             System.out.println(s.toString());
             System.out.println("----------------------");
-        }
+            }
+        else
+            System.out.println("Khong ton tai danh sach.");
     }
+    
 }
